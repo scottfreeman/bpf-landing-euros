@@ -20,7 +20,7 @@ export function Schedule() {
                 <div className='mt-2'>Warmup: 8:00am</div>
                 <div>Lifting Begins: 9:00am</div>
               </div>
-              <div className='mb-8'>
+              <div>
                 <div className='text-lg font-bold'>Sunday 2nd July, 2023</div>
                 <div>Men&apos;s & Women&apos;s (KG): All untested lifters</div>
                 <div className='mt-2'>Warmup: 9:00am</div>
@@ -53,7 +53,7 @@ export function Schedule() {
                   5:00pm to 7:00pm
                 </div>
               </div>
-              <div className='mb-8'>
+              <div>
                 <div className='text-lg font-bold'>Saturday, 1st July, 2023</div>
                 <div>Men&apos;s & Women&apos;s (KG): All untested lifters</div>
                 <div className='mt-2'>

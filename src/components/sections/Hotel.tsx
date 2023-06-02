@@ -3,10 +3,9 @@ import { A } from '@atoms';
 export function Hotel() {
   return (
     <section className='bg-white text-black flex flex-wrap xl:w-3/4 2xl:w-1/2 m-auto mb-10'>
-      <div className='m-4 bg-gray-200 w-full rounded flex'>
-        <div className='flex-1 m-2 p-4'>
+      <div className='m-4 bg-gray-200 w-full rounded flex flex-wrap'>
+        <div className='md:w-1/2 p-4'>
           <div className='text-2xl uppercase font-bold'>Taxis</div>
-
           <ul className='list-disc list-outside mt-2 ml-5'>
             <li className='list-item'>
               <span className='font-bold'>ACE-ABC Taxis</span>
@@ -31,7 +30,7 @@ export function Hotel() {
             We offer this list as a convenience, not as a recommendation. Other taxi firms are available.
           </div>
         </div>
-        <div className='flex-1 m-2 p-4'>
+        <div className='md:w-1/2 p-4'>
           <div className='text-2xl mb-2 uppercase font-bold'>Parking</div>
           <div className='mb-2'>
             Very limited free on-site and street parking is available for the duration of the event.
