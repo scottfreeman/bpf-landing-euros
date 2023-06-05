@@ -1,5 +1,6 @@
 import Countdown, { CountdownRenderProps } from 'react-countdown';
-import { A, Button } from '@atoms';
+import { A } from '@atoms';
+import { RegistrationButton } from './RegistrationButton';
 
 export function Main() {
   const date = new Date('2023-06-30 09:00:00');
@@ -7,32 +8,37 @@ export function Main() {
   const countdownRenderer = ({ completed, formatted }: CountdownRenderProps) => {
     if (!completed) {
       return (
-        <div className='flex'>
-          <div className='flex flex-col items-center m-2 lg:m-4'>
-            <div className='bg-gradient-to-b from-red-500 to-red-900 rounded text-white p-2 lg:p-5 text-2xl lg:text-5xl'>
-              <span suppressHydrationWarning={true}>{formatted.days}</span>
+        <>
+          <div className='flex'>
+            <div className='flex flex-col items-center m-2 lg:m-4'>
+              <div className='bg-gradient-to-b from-red-500 to-red-900 rounded text-white p-2 lg:p-5 text-2xl lg:text-5xl'>
+                <span suppressHydrationWarning={true}>{formatted.days}</span>
+              </div>
+              <div className='uppercase text-xs lg:text-sm'>Days</div>
             </div>
-            <div className='uppercase text-xs lg:text-sm'>Days</div>
-          </div>
-          <div className='flex flex-col items-center m-2 lg:m-4'>
-            <div className='bg-gradient-to-b from-red-500 to-red-900 rounded text-white p-2 lg:p-5 text-2xl lg:text-5xl'>
-              <span suppressHydrationWarning={true}>{formatted.hours}</span>
+            <div className='flex flex-col items-center m-2 lg:m-4'>
+              <div className='bg-gradient-to-b from-red-500 to-red-900 rounded text-white p-2 lg:p-5 text-2xl lg:text-5xl'>
+                <span suppressHydrationWarning={true}>{formatted.hours}</span>
+              </div>
+              <div className='uppercase text-xs lg:text-sm'>Hours</div>
             </div>
-            <div className='uppercase text-xs lg:text-sm'>Hours</div>
-          </div>
-          <div className='flex flex-col items-center m-2 lg:m-4'>
-            <div className='bg-gradient-to-b from-red-500 to-red-900 rounded text-white p-2 lg:p-5 text-2xl lg:text-5xl'>
-              <span suppressHydrationWarning={true}>{formatted.minutes}</span>
+            <div className='flex flex-col items-center m-2 lg:m-4'>
+              <div className='bg-gradient-to-b from-red-500 to-red-900 rounded text-white p-2 lg:p-5 text-2xl lg:text-5xl'>
+                <span suppressHydrationWarning={true}>{formatted.minutes}</span>
+              </div>
+              <div className='uppercase text-xs lg:text-sm'>Minutes</div>
             </div>
-            <div className='uppercase text-xs lg:text-sm'>Minutes</div>
-          </div>
-          <div className='flex flex-col items-center m-2 lg:m-4'>
-            <div className='bg-gradient-to-b from-red-500 to-red-900 rounded text-white p-2 lg:p-5 text-2xl lg:text-5xl'>
-              <span suppressHydrationWarning={true}>{formatted.seconds}</span>
+            <div className='flex flex-col items-center m-2 lg:m-4'>
+              <div className='bg-gradient-to-b from-red-500 to-red-900 rounded text-white p-2 lg:p-5 text-2xl lg:text-5xl'>
+                <span suppressHydrationWarning={true}>{formatted.seconds}</span>
+              </div>
+              <div className='uppercase text-xs lg:text-sm'>Seconds</div>
             </div>
-            <div className='uppercase text-xs lg:text-sm'>Seconds</div>
           </div>
-        </div>
+          <div className='mt-4'>
+            <RegistrationButton />
+          </div>
+        </>
       );
     }
   };

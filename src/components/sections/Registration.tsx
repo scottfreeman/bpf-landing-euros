@@ -1,4 +1,5 @@
 import { Button } from '@atoms';
+import { RegistrationButton } from './RegistrationButton';
 
 export function Registration() {
   return (
@@ -14,13 +15,7 @@ export function Registration() {
             No refunds or transfers. All sale are final.
           </div>
           <div className='mb-4'>
-            <Button
-              href='https://docs.google.com/forms/d/e/1FAIpQLSd9OnCOZePekwzdfp7gKYRaSa0fLr6ImS_X1QflHINJPEcOAw/viewform'
-              target='_blank'
-              className='text-3xl'
-            >
-              Register Now
-            </Button>
+            <RegistrationButton />
           </div>
         </div>
       </section>
