@@ -7,7 +7,7 @@ export function Registration() {
         <div className='m-auto p-4 text-center'>
           <div className='text-4xl uppercase font-bold mb-2'>Registration</div>
           <div className='mb-2'>
-            You must submit your entry form before the 10th of June, 2023.
+            You must submit your entry form before the 7th of June, 2023.
             <br />
             Late entries will not be accepted.
             <br />
