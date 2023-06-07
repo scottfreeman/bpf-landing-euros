@@ -35,9 +35,6 @@ export function Main() {
               <div className='uppercase text-xs lg:text-sm'>Seconds</div>
             </div>
           </div>
-          <div className='mt-4'>
-            <RegistrationButton />
-          </div>
         </>
       );
     }
